@@ -1,0 +1,4 @@
+# created by virtualenv automatically
+venv
+data.json
+docker-compose.yml

@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  python:
+    build: ./
+    container_name: factorio-discord-bot
+    volumes:
+      - ./data.json:/usr/src/app/data.json
+    environment:
+      - FACTORIO_DISCORD_CHANNEL=CHANNEL_ID
+      - FACTORIO_DISCORD_TOKEN=BOT_SECRET_TOKEN
+      - FACTORIO_MOD_AUTHOR=MOD_AUTHOR_NAME
+    restart: always
