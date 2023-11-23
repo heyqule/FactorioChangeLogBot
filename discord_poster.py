@@ -26,9 +26,8 @@ class MyClient(discord.Client):
             print('Posting in: {}'.format(channel.name))
             embeds = format_embeds(changelog)
             for embed in embeds:
-               #message = await channel.send(embed=embed)
-               #print('Posted message: {}'.format(message.jump_url))
-               print('Posted message: {}'.format(embed.title))
+               message = await channel.send(embed=embed)
+               print('Posted message: {}'.format(message.jump_url))
 
         await self.close()
 
