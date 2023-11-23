@@ -11,7 +11,7 @@ FACTORIO_DISCORD_CHANNEL: Channel id that the bot will post to. It's an 18-digit
 FACTORIO_DISCORD_TOKEN: The BOT's "secret" of the discord Application that will post the changelog. See https://discord.com/developers/applications/
 FACTORIO_MOD_AUTHOR: Your Factorio Mod Portal name. That's the name the bot will look for to find relevant mods.
 
-2. Add data.json
+2. "{} >> data.json" to add data.json file.
 3. Run docker compose up
 4. ???
 5. Profit
