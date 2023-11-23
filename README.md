@@ -5,6 +5,7 @@ The change here is that it will run off my local server via cron.  Instead of am
 
 #### SETUP STEP
 
+1. Copy docker-compose.example.yml to docker-compose.yml
 1. Change the environment variables to your keys in docker-compose.yml
 
 FACTORIO_DISCORD_CHANNEL: Channel id that the bot will post to. It's an 18-digit number. Right click on a discord channel and "Copy ID" to find it.
