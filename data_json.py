@@ -9,7 +9,7 @@ def get_known_mods():
         with open('data.json') as f:
             json_obj = json.load(f)
         return json_obj
-    except RuntimeError as re:
+    except json.decoder.JSONDecodeError as re:
         return {}
 
 
