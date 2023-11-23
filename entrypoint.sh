@@ -1,6 +1,7 @@
+#!/bin/bash
 while :
 do
-    python main.py
-    sleep 900 &  # We sleep in the background to make the screipt interruptible via SIGTERM when running in docker
+    sleep 24*60*60 &  # We sleep in the background to make the script interruptable via SIGTERM when running in docker
     wait $!
+    python main.py
 done

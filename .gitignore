@@ -2,3 +2,5 @@
 venv
 data.json
 docker-compose.yml
+.idea
+venv
