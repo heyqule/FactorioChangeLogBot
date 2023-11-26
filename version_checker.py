@@ -11,6 +11,7 @@ VERSION_SEPARATOR = "-----------------------------------------------------------
 
 OWNER = os.environ.get('FACTORIO_MOD_AUTHOR')
 
+
 def get_updated_mods(known_mods_saved_info):
     new_changelog_details = []
     owner_mods = get_all_mods_by_owner()
@@ -26,9 +27,9 @@ def get_updated_mods(known_mods_saved_info):
             new_changelog_details.append(new_changelog)
         elif compared_value == -1:
             print('WARN - Mod {} was downgraded! {} -> {}'.format(mod['name'], known_version, current_version))
-            set_last_known_version(mod['name'], current_version)
+            known_mods_saved_info = set_last_known_version(known_mods_saved_info, mod['name'], current_version)
 
-    return new_changelog_details
+    return new_changelog_details, known_mods_saved_info
 
 
 def compare_versions(version_a, version_b):
