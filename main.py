@@ -31,7 +31,7 @@ def run_checker():
 
     if changelogs_to_post:
         print('Posted to chat...')
-       # send_changelog_messages(changelogs_to_post)
+        send_changelog_messages(changelogs_to_post)
     else:
         print('Did nothing...')
 
